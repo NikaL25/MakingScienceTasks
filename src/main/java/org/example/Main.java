@@ -5,38 +5,39 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        //Task1
+        // Task 1: 
         int[] nums = {2, 2, 1, 4, 4, 6, 6};
         System.out.println("Single Number: " + singleNumber(nums));
+        
+        // Task 1 Test Cases
         int[] nums1 = {2, 2, 1};
         int expected1 = 1;
-        int result1 = singleNumber.singleNumber(nums1);
+        int result1 = singleNumber(nums1);
         System.out.println("Test Case 1: " + (expected1 == result1 ? "Passed" : "Failed"));
-
+        
         int[] nums2 = {4, 1, 2, 1, 2};
         int expected2 = 4;
-        int result2 = singleNumber.singleNumber(nums2);
+        int result2 = singleNumber(nums2);
         System.out.println("Test Case 2: " + (expected2 == result2 ? "Passed" : "Failed"));
 
-        // Task 2:
+        // Task 2: 
         int amount = 37;
-        System.out.println("Minimum Coin Split: " + minSplit(amount));
+        System.out.println("Minimum Coin Split: " + CoinExchange.minCoins(amount));
 
-        // Task 3:
+        // Task 3: 
         String[] array = {"extract", "exhale", "excavate"};
-        System.out.println("Longest Common Prefix: " + longestPrefix(array));
+        System.out.println("Longest Common Prefix: " + CoinExchange.longestPrefix(array));
 
-        // Task 4:
+        // Task 4: 
         String a = "1010";
         String b = "1011";
-        System.out.println("Binary String Sum: " + binaryStringSum(a, b));
+        System.out.println("Binary String Sum: " + CoinExchange.addBinary(a, b));
 
-        // Task 5: Count variants for climbing stairs
+        // Task 5: 
         int stairsCount = 5;
         System.out.println("Count Variants: " + countVariants(stairsCount));
 
-
-        //Task 6:
+        // Task 6: 
         O1Deletion<Integer> o1Deletion = new O1Deletion<>();
         o1Deletion.add(1);
         o1Deletion.add(2);
